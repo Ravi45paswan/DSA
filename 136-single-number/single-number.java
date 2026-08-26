@@ -1,11 +1,9 @@
 class Solution {
     public int singleNumber(int[] nums) {
-     
-     for(int i=0; i<nums.length; i++)
-     
-     {
-
-        int count = 0;
+      
+      for(int i=0; i<nums.length; i++)
+      {
+        int count =0;
         for(int j=0; j<nums.length; j++)
         {
             if(nums[i]==nums[j])
@@ -15,10 +13,9 @@ class Solution {
         }
         if(count==1)
         {
-          return nums[i];
+            return nums[i];
         }
-     }  
-     return -1; 
+      }  
+      return -1;
     }
-    
 }
